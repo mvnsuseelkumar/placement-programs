@@ -58,7 +58,7 @@ public class MonotonicArray {
             }
             if (direction == 0) {
                 direction = arr[i] < arr[i + 1] ? 1 : -1;
-            } else if ((direction == 1 && arr[i] < arr[i - 1]) || (direction == -1 && arr[i] > arr[i - 1])) {
+            } else if ((direction == 1 && arr[i] > arr[i + 1]) || (direction == -1 && arr[i] < arr[i + 1])) {
                 System.out.println(false);
                 sc.close();
                 return;
